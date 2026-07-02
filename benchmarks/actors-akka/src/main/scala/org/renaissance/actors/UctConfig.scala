@@ -3,7 +3,7 @@ package org.renaissance.actors
 object UctConfig {
 
   /** Upper bound on the number of nodes in the pre-computed tree. */
-  val NodeCount: Int = 70_000
+  val NodeCount: Int = 150_000
 
   /** Branching factor: each interior node has exactly this many children. */
   val BranchingFactor: Int = 10
