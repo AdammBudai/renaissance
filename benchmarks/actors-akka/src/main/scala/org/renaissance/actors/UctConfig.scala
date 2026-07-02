@@ -9,7 +9,7 @@ object UctConfig {
   val BranchingFactor: Int = 10
 
   /** Number of urgent paths (leaves) to select for the shock reduction. */
-  val UrgentPathCount: Int = 16
+  val UrgentPathCount: Int = 32
 
   /** Minimum depth fraction [0, 1] a leaf must reach to be eligible for urgent path selection. */
   val UrgentLeafDepthFractionMin: Double = 0.9
