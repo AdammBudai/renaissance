@@ -46,7 +46,7 @@ import scala.concurrent.duration.Duration
 @Summary("Runs the Unbalanced Cobwebbed Tree actor workload in Akka.")
 @Licenses(Array(License.MIT))
 @Repetitions(24)
-@Parameter(name = "topology_count", defaultValue = "5")
+@Parameter(name = "topology_count", defaultValue = "2")
 @Configuration(name = "test", settings = Array("topology_count = 1"))
 @Configuration(name = "jmh", settings = Array("topology_count = 1"))
 final class AkkaUct extends Benchmark {
