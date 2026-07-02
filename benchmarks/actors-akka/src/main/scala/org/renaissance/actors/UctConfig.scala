@@ -3,7 +3,7 @@ package org.renaissance.actors
 object UctConfig {
 
   /** Upper bound on the number of nodes in the pre-computed tree. */
-  val NodeCount: Int = 65_000
+  val NodeCount: Int = 100_000
 
   /** Branching factor: each interior node has exactly this many children. */
   val BranchingFactor: Int = 10
@@ -12,7 +12,7 @@ object UctConfig {
   val UrgentPathCount: Int = 10
 
   /** Minimum depth fraction [0, 1] a leaf must reach to be eligible for urgent path selection. */
-  val UrgentLeafDepthFractionMin: Double = 0.8
+  val UrgentLeafDepthFractionMin: Double = 0.85
 
   /**
    * Total number of temperature reductions per iteration.
