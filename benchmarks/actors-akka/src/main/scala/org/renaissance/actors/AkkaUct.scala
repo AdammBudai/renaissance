@@ -135,7 +135,7 @@ final class AkkaUct extends Benchmark {
     () => {
       for (i <- 0 until topologyCount) {
         val actual = actualTemperatures(i)
-        val lowerBound = expectedNominalTemperatures(i) - TemperatureTolerance
+        val lowerBound = expectedNominalTemperatures(i) + TemperatureTolerance
         val upperBound = expectedShockedTemperatures(i) + TemperatureTolerance
 
         val temperatureWithinRange = lowerBound < actual && actual < upperBound

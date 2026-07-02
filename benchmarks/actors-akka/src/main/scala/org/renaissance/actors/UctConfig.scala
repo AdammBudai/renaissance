@@ -12,7 +12,7 @@ object UctConfig {
   val UrgentPathCount: Int = 10
 
   /** Minimum depth fraction [0, 1] a leaf must reach to be eligible for urgent path selection. */
-  val UrgentLeafDepthFractionMin: Double = 0.75
+  val UrgentLeafDepthFractionMin: Double = 0.9
 
   /**
    * Total number of temperature reductions per iteration.
