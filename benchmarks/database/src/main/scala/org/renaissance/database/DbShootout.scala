@@ -182,7 +182,7 @@ final class DbShootout extends Benchmark {
   }
 
   private def newDbInstances(): Unit = {
-    mapDb = MapDb.setup(tempDirPath, threads, false)
+    mapDb = MapDb.setup(tempDirPath, threads, runInMemory)
     mapDbWriter = mapDb.createWriter()
     mapDbReader = mapDb.createReader()
   }
@@ -209,7 +209,7 @@ final class DbShootout extends Benchmark {
   }
 
   private def newMvStoreInstances(): Unit = {
-    mvStore = MvStore.setup(tempDirPath, threads, false)
+    mvStore = MvStore.setup(tempDirPath, threads, runInMemory)
     mvStoreWriter = mvStore.createWriter()
     mvStoreReader = mvStore.createReader()
   }
